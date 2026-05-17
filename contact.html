@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Contact — Locus</title>
+  <meta name="description" content="Write to the Locus studio. Trade and press inquiries welcome." />
+  <meta name="theme-color" content="#0E0E10" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,200..600,0..100;1,9..144,200..600,0..100&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;350;400;500&display=swap" />
+
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">locus<sup>01</sup></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="table.html">The Table</a>
+      <a href="studio.html">Studio</a>
+      <a href="journal.html">Journal</a>
+      <a href="reserve.html">Reserve</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" data-nav-toggle aria-label="Open menu">Menu</button>
+  </header>
+
+  <div class="nav-drawer" data-nav-drawer aria-hidden="true">
+    <div class="nav-drawer__head">
+      <a href="index.html" class="brand">locus<sup>01</sup></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Close menu">Close</button>
+    </div>
+    <ul class="nav-drawer__list">
+      <li><a href="table.html">The Table</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="reserve.html">Reserve</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ── contact hero ─────────────────────────────────────── -->
+    <section class="section" style="padding-top: clamp(160px, 22vh, 240px); padding-bottom: clamp(40px, 5vw, 80px);">
+      <div class="container">
+        <span class="meta meta--brass" data-reveal>Contact</span>
+        <h1 style="margin-top: 24px; max-width: 18ch;" data-reveal data-reveal-delay="0.1">
+          Write to<br /><em>the studio.</em>
+        </h1>
+        <p style="margin-top: 32px; max-width: 52ch;" data-reveal data-reveal-delay="0.2">
+          We answer slowly &mdash; usually within the week. Below
+          are the right places to write for each thing.
+        </p>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── three channels ──────────────────────────────────── -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="row row--3">
+
+          <div id="general" data-reveal>
+            <span class="meta meta--brass">N&deg; 01</span>
+            <h3 style="margin-top: 16px;">General</h3>
+            <p style="margin-top: 16px;">
+              For questions about the Table, the studio, or what
+              we are quietly working on next.
+            </p>
+            <a href="mailto:studio@locus.co" class="link-quiet" style="margin-top: 12px;">
+              <span>studio@locus.co</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+          <div id="trade" data-reveal data-reveal-delay="0.1">
+            <span class="meta meta--brass">N&deg; 02</span>
+            <h3 style="margin-top: 16px;">Trade</h3>
+            <p style="margin-top: 16px;">
+              For interior designers, architects, and hospitality
+              partners. Trade pricing, lead times, and on-site
+              installation available.
+            </p>
+            <a href="mailto:trade@locus.co" class="link-quiet" style="margin-top: 12px;">
+              <span>trade@locus.co</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+          <div id="press" data-reveal data-reveal-delay="0.2">
+            <span class="meta meta--brass">N&deg; 03</span>
+            <h3 style="margin-top: 16px;">Press</h3>
+            <p style="margin-top: 16px;">
+              For editors and journalists. Press kit, hi-res
+              imagery, and interviews with the studio on request.
+            </p>
+            <a href="mailto:press@locus.co" class="link-quiet" style="margin-top: 12px;">
+              <span>press@locus.co</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── address / visit ──────────────────────────────────── -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="row row--12">
+          <div class="col-span-4 col-start-3" data-reveal>
+            <span class="meta meta--brass">The studio</span>
+            <h3 style="margin-top: 16px;">By appointment</h3>
+            <p style="margin-top: 16px;">
+              Locus Studio<br />
+              <span class="muted">Address available on request</span><br />
+              Open Tuesday to Friday<br />
+              Visits by appointment
+            </p>
+          </div>
+          <div class="col-span-4" data-reveal data-reveal-delay="0.15">
+            <span class="meta meta--brass">A simple message</span>
+            <form class="form" data-form style="margin-top: 16px;">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn--brass">
+                  <span>Send</span>
+                  <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+                </button>
+              </div>
+            </form>
+            <div class="form__success" data-form-success hidden style="margin-top: 24px;">
+              <h3>Thank you.</h3>
+              <p>Your message has arrived. We will write back within the week.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <a href="index.html" class="brand">locus<sup>01</sup></a>
+          <p>Quiet machines for considered rooms. A studio in residence.</p>
+        </div>
+        <div>
+          <h4>Atelier</h4>
+          <ul>
+            <li><a href="table.html">The Table</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="journal.html">Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Care</h4>
+          <ul>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="contact.html#trade">Trade</a></li>
+            <li><a href="contact.html#press">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach</h4>
+          <ul>
+            <li><a href="mailto:studio@locus.co">studio@locus.co</a></li>
+            <li><a href="contact.html">Visit by appointment</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>&copy; <span data-year>2026</span> Locus Studio</span>
+        <span>All objects made to order</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

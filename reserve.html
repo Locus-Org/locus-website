@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Reserve a place — Locus</title>
+  <meta name="description" content="The first edition of the Locus Kinetic Table is made to order. Reserve a place on the list." />
+  <meta name="theme-color" content="#0E0E10" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,200..600,0..100;1,9..144,200..600,0..100&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;350;400;500&display=swap" />
+
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">locus<sup>01</sup></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="table.html">The Table</a>
+      <a href="studio.html">Studio</a>
+      <a href="journal.html">Journal</a>
+      <a href="reserve.html">Reserve</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" data-nav-toggle aria-label="Open menu">Menu</button>
+  </header>
+
+  <div class="nav-drawer" data-nav-drawer aria-hidden="true">
+    <div class="nav-drawer__head">
+      <a href="index.html" class="brand">locus<sup>01</sup></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Close menu">Close</button>
+    </div>
+    <ul class="nav-drawer__list">
+      <li><a href="table.html">The Table</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="reserve.html">Reserve</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ── reserve hero ─────────────────────────────────────── -->
+    <section class="section" style="padding-top: clamp(160px, 22vh, 240px); padding-bottom: clamp(40px, 5vw, 80px);">
+      <div class="container">
+        <div class="row row--12">
+          <div class="col-span-7 col-start-3" data-reveal>
+            <span class="meta meta--brass">Reserve</span>
+            <h1 style="margin-top: 24px; max-width: 16ch;" data-reveal data-reveal-delay="0.1">
+              The first edition is<br /><em>made to order.</em>
+            </h1>
+            <p class="lead" style="margin-top: 32px; max-width: 44ch;" data-reveal data-reveal-delay="0.2">
+              Reservations open in small batches of twelve. Add
+              your name to the list and we will write you with
+              images, a final price, and a place in the queue.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── form ─────────────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="row row--12">
+          <div class="col-span-4 col-start-3" data-reveal>
+            <span class="meta meta--brass">What happens next</span>
+            <p style="margin-top: 24px;">
+              Within a week, you will receive a quiet letter from
+              the studio. We will share images of the current
+              batch, a final price for the configuration you have
+              chosen, and an honest date for delivery.
+            </p>
+            <p>
+              There is no deposit at this stage. Reserving a place
+              is a soft commitment, easily declined when the time
+              comes.
+            </p>
+            <p>
+              We answer in the order we receive.
+            </p>
+          </div>
+
+          <div class="col-span-5" data-reveal data-reveal-delay="0.15">
+            <form class="form form--wide" data-form>
+              <div class="form__row">
+                <div class="field">
+                  <label for="first">First name</label>
+                  <input id="first" name="first" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="last">Last name</label>
+                  <input id="last" name="last" type="text" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+
+              <div class="form__row">
+                <div class="field">
+                  <label for="city">City</label>
+                  <input id="city" name="city" type="text" placeholder="Where the Table will live" />
+                </div>
+                <div class="field">
+                  <label for="finish">Preferred finish</label>
+                  <select id="finish" name="finish">
+                    <option>European walnut, oiled</option>
+                    <option>Smoked oak</option>
+                    <option>Ebonised ash</option>
+                    <option>Undecided &mdash; would like to see</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="notes">A note, if you wish</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Anything about the room, or the moment, or the why."></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn--brass">
+                  <span>Reserve a place</span>
+                  <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+                </button>
+              </div>
+
+              <p style="margin: 0; font-size: var(--t-meta); color: var(--ivory-quiet); font-family: var(--mono); letter-spacing: 0.1em;">
+                We will only write you about the Table. No
+                newsletters, no third parties.
+              </p>
+            </form>
+
+            <div class="form__success" data-form-success hidden>
+              <h3>You are on the list.</h3>
+              <p>
+                Thank you. We will write to you within the week
+                with images, a price, and a place in the queue.
+                Should you change your mind, simply tell us &mdash;
+                there is nothing further to do.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <a href="index.html" class="brand">locus<sup>01</sup></a>
+          <p>Quiet machines for considered rooms. A studio in residence.</p>
+        </div>
+        <div>
+          <h4>Atelier</h4>
+          <ul>
+            <li><a href="table.html">The Table</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="journal.html">Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Care</h4>
+          <ul>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="contact.html#trade">Trade</a></li>
+            <li><a href="contact.html#press">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach</h4>
+          <ul>
+            <li><a href="mailto:studio@locus.co">studio@locus.co</a></li>
+            <li><a href="contact.html">Visit by appointment</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>&copy; <span data-year>2026</span> Locus Studio</span>
+        <span>All objects made to order</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
